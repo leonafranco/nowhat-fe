@@ -1,5 +1,6 @@
-import { Box, Button, Flex, HStack, Input, InputGroup, InputRightElement, VStack, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, HStack, Input, InputGroup, InputRightElement, VStack, Text, Img } from '@chakra-ui/react'
 import { useState } from 'react'
+import leftbanner from "@/assets/pexels-negative-space-97077.jpg"
 
 function App() {
   const [show, setShow] = useState(false)
@@ -14,7 +15,7 @@ function App() {
           <VStack w='100%' h={"82%"} alignItems={"center"} >
             <VStack alignItems={"start"}>
               <Text fontSize='5xl'>Welcome to NoWhat</Text>
-              <Text color='grey' >welcome back! Please enter your login to sign up</Text>
+              <Text color='grey' >Welcome back! Please enter your login to sign up</Text>
               <Text>Login</Text>
               <Input placeholder='Write your Login' size='md' />
               <Text>Password</Text>
@@ -41,7 +42,7 @@ function App() {
         </VStack>
 
         <Box w='50%' h='100%' bgColor={"blue.100"}>
-          <h1>Hello1</h1>
+          <Img h='100%' src={leftbanner}></Img>
         </Box>
       </HStack>
     </Flex >
